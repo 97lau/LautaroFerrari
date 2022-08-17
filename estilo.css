@@ -1,0 +1,552 @@
+* {
+    padding: 0; 
+    margin: 0; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: content-box;
+}
+body {
+    background-image: url(./imagenes\ estilo/barbackground.jpg);
+}
+
+/*navegacion*/
+.navegador {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.navegador:hover {
+    background-color: rgb(59, 59, 59)
+}
+nav {
+    background-image:url(./imagenes\ estilo/backgroundbar2.jpg);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline;
+    text-align: right;
+}
+nav {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100vw
+}
+nav h3 {
+    font-size: 30px;
+    color: white; 
+    letter-spacing: 15px; 
+    padding-left: 20px;
+    text-align: start;
+}
+nav a { 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*fin navegacion*/
+
+/*INDEX*/
+main {
+    margin: 1%;
+}
+
+main .portada {
+    padding-top: 60px;
+    padding-bottom: 40px; 
+    margin-bottom: 100px; margin-top: 150px;
+    border: 8px solid white; 
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+}
+h1 {
+    font-size: 45px; 
+    color: white;
+    letter-spacing: 15px
+}
+
+.imagenicon {margin: auto;
+    height: 350px;
+    width: 350px;
+    border: solid 8px white;
+}
+
+.imagenmain {
+    height: 400px;
+    border: solid 8px white
+}
+
+.portada h3 {
+    font-size: 30px; 
+    color: white;
+    margin-bottom: 50px;
+}
+
+.portada a {
+    padding:15px; 
+    text-decoration: none; 
+    color: white; 
+    border: 3px solid;
+    border-color: white;
+    background-color: rgb(59, 59, 59)
+}
+
+.portada a:hover {
+    background-color: rgb(0, 0, 0)
+}
+
+.portada p {
+    padding-top: 12%; 
+    font-size: 25px; 
+    color: white
+}
+
+article h2 {
+    font-size: 35px; 
+    color: white; 
+    letter-spacing: 2px
+}
+
+article p {
+    font-size:25px; 
+    color: white; 
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*sobre nosotros*/
+.imagenesnosotros {
+    display: flex;
+    flex-flow: row wrap;
+}
+.imagennosotros1 {
+    height: 400px; 
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagennosotros2 {
+    height: 400px; 
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagennosotros3 {
+    height: 400px; 
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagennosotros4 {
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.sobrenosotros {
+    border: 8px solid white;
+    padding: 15px;
+    background-color: rgb(59, 59, 59)
+}
+article h3 {
+    font-size: 30px; 
+    text-align: left;
+    padding-top: 10px;
+}
+h3 a {color: white; 
+    text-decoration: none; 
+    text-align: justify
+}
+.link {
+    border: solid 3px; 
+    color: white;
+    background-color: rgb(59, 59, 59);
+    display: block; 
+    padding: 15px; 
+    display: inline-block
+}
+.link:hover {
+    background-color: rgb(0,0,0)
+}
+/*fin sobre nosotros*/
+
+/*promociones*/
+.promociones {
+    border: 8px solid white;
+    background-color: rgb(59, 59, 59);
+    padding: 15px;
+    margin-top: 20px;
+}
+.promociones h2 {
+    font-size: 35px; 
+    color: white; 
+    letter-spacing: 2px
+}
+.promociones h3 {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    padding-top: 10px
+}
+.promociones ul li{
+    font-size: 25px;
+    color: white;
+    list-style: none;
+    float: left;
+    display: block;
+}
+
+.imagenespromociones1 {
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagenespromociones2 {
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagenespromociones3 {
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.imagenespromociones4 {
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    margin: 1%;
+}
+.promociones a {
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    border: 3px solid white;
+}
+.promociones a:hover {
+    background-color: rgb(0, 0, 0);
+}
+/*fin promociones*/
+
+/*reservas*/
+.reservas {
+    border: 8px solid white;
+    background-color: rgb(59, 59, 59);
+    padding: 15px;
+    margin-top: 20px
+}
+article .reservas h2 {
+    font-size: 20px; 
+    color: white; 
+    letter-spacing: 2px
+}
+.reservas h3 {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+.reservas form {
+    border: 3px solid white; 
+    background-color: rgb(59, 59, 59);
+    font-size: 20px;
+    color: white;
+    padding: 15px
+}
+.reservas form input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.reservas form a {
+    color: white;
+}
+/*fin reservas*/
+
+/*fin INDEX*/
+
+
+
+/*MENU*/
+#menu {font-size: 45;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 12vh;
+}
+section table {
+    border: 8px solid white;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+}
+section table td {
+    padding: 10px;
+}
+
+section .comida {
+    margin: 10px;
+}
+section .bebida {
+    margin: 10px;
+}
+section .combo {
+    margin: 10px;
+}
+/*fin MENU*/
+
+
+
+
+
+/*PROMOCIONES*/
+#promo {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 12vh;
+}
+.promo {
+    border: 8px solid white;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+}
+.promo h3 {
+    color: white;
+    font-size: 30px;
+}
+.promo ul li {
+    font-size: 25;
+    color: white;
+    padding: 5px 5px 5px 0px;
+}
+.promo a {
+    border: 1px solid white;
+}
+.promo a:hover {
+    background-color: black
+}
+/*fin PROMOCIONES*/
+
+
+
+/*RESERVAR*/
+#reserva {
+    font-size: 45px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 12vh;
+}
+.reserva {
+    border: 8px solid white;
+    padding:5px; 
+    margin: 5px; 
+    font-size: 18px; 
+    color: white; 
+    background-color: rgb(59, 59, 59)
+}
+/*fin RESERVAR*/
+
+
+
+/*SOBRE NOSOTROS*/
+#nosotros {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 12vh 
+}
+#nosotros h1 {
+    font-size: 45px;
+}
+#nosotros h2 {
+    font-size: 35px; 
+    color: white;
+    margin-bottom: 20px;
+}
+#nosotros section {
+    border: 8px solid white;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);}
+#nosotros p { 
+    font-size: 25px; color: white; 
+    text-align: justify; 
+    padding: 5px
+}
+#nosotros article {
+    border: 8px solid white; 
+    background-color: rgb(59, 59, 59); 
+    padding: 5px; 
+    margin-top: 15px;
+}
+#nosotros h3 {
+    font-size: 30px;
+    color: white;
+}
+#nosotros img {
+    height: 220px;
+    width: 220px;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 1%; 
+    padding: 1%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "aaa1 aaa2 aaa3" "aaa4 aaa5 aaa6" "aaa7 aaa8 aaa9" "aaa10";
+    display: flex;
+    flex-wrap: wrap;;
+    
+}
+
+.grid {
+    column-gap: 15px;
+    row-gap: 15px;}
+
+/*fin SOBRE NOSOTROS*/
+
+
+/*footer*/
+footer .contactofooter {
+    font-size: 50px; 
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-align: left;
+}
+footer {
+    border: 8px solid white;
+    background-color: rgb(59, 59, 59);
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "col1" "col2" "col3" "col4";
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer h5 {
+    font-size: 30px;
+    color: white;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    display: inline-block;
+    margin:1%;
+}
+ul {
+    list-style: none;
+    align-content: center;
+}
+div a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+div .col1 {
+    border: 3px solid white;
+    padding: 1%;
+    margin: 1%;
+}
+div .col1 ul li img {
+    height:150px;
+}
+
+div .col2 {
+    border: 3px solid white;
+    margin: 1%;
+    padding: 1%;
+}
+div .col2 ul li {
+    font-size: 25px;
+    color:white
+}
+
+div .col3 {
+    border: 3px solid white;
+    padding: 1%;
+    margin: 1%;
+}
+div .col3 p {
+    font-size: 25px;
+    color: white;
+    padding-bottom: 1%;}
+
+div .col4 {
+    border: 3px solid white;
+    padding: 1%;
+    margin: 1%;
+}
+div .col4 p {
+    font-size: 25px;
+    color: white; 
+    padding: 1%;
+}
+div .col4 iframe {
+    height: 200px;
+    width: 100%
+}
+
+div .horarios {
+    border: 3px solid white;
+    margin: 1%;
+    padding: 1%;
+}
+div .horarios h5 {
+    font-size: 30px ;
+}
+div .horarios table {
+    border: 2px solid white; 
+    font-size: 18px;color:white; 
+    text-align: center
+}
+
+#copyright {
+    border: 3px solid white;
+    margin: auto; 
+    padding: 1%;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+/*fin footer*/
+
+@media only screen and (min-width:1000px) and (max-width:1366px) {
+    h1 {font-size: 55px !important}
+    h2 {font-size: 45px !important}
+    h3 {font-size: 40px !important}
+    h5 {font-size: 40px !important}
+    p {font-size: 30px !important}
+    a {font-size: 30px !important}
+    li {font-size: 30px !important}
+    #nosotros {margin-top: 14vh;}
+    #promo {margin-top: 15vh}
+    #reserva {margin-top: 14vh;}
+    #menu {margin-top: 15vh}
+}
+
+@media only screen and (min-width:1367px) {
+    h1 {font-size: 65px !important}
+    h2 {font-size: 55px !important}
+    h3 {font-size: 50px !important}
+    h5 {font-size: 50px !important}
+    p {font-size: 35px !important}
+    a {font-size: 35px !important}
+    li {font-size: 35px !important}
+    #nosotros {margin-top: 16vh}
+    #promo {margin-top: 16vh}
+    #reserva {margin-top: 16vh}
+    #menu {margin-top: 16vh}
+}
