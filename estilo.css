@@ -4,10 +4,13 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: content-box;
 }
+*::selection {
+    color: white;
+    background: rgb(114, 114, 114);
+}
 body {
     background-image: url(./imagenes\ estilo/barbackground.jpg);
 }
-
 /*navegacion*/
 .navegador {
     display: inline;
@@ -18,7 +21,7 @@ body {
     flex-wrap: wrap;
 }
 .navegador:hover {
-    background-color: rgb(59, 59, 59)
+    background-color: rgb(59, 59, 59);
 }
 nav {
     background-image:url(./imagenes\ estilo/backgroundbar2.jpg);
@@ -96,7 +99,7 @@ h1 {
 }
 
 .portada a:hover {
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(0, 0, 0);
 }
 
 .portada p {
@@ -123,6 +126,10 @@ article p {
 .imagenesnosotros {
     display: flex;
     flex-flow: row wrap;
+}
+.imagenesnosotros :hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 .imagennosotros1 {
     height: 400px; 
@@ -200,7 +207,10 @@ h3 a {color: white;
     float: left;
     display: block;
 }
-
+.imagenespromo :hover {
+    filter:blur(4px);
+    transition: 0.3s;
+}
 .imagenespromociones1 {
     height: 400px;
     width: 400px;
@@ -301,6 +311,42 @@ section .bebida {
 }
 section .combo {
     margin: 10px;
+}
+
+.comida :hover{
+    animation-name: transparente;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+@keyframes transparente {
+0%{opacity: 0.5;}
+100%{opacity: 1;}
+}
+
+.bebida :hover{
+    animation-name: transparente;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+@keyframes transparente {
+0%{opacity: 0.5;}
+100%{opacity: 1;}
+}
+
+.combo :hover{
+    animation-name: transparente;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+@keyframes transparente {
+0%{opacity: 0.5;}
+100%{opacity: 1;}
 }
 /*fin MENU*/
 
@@ -407,7 +453,10 @@ section .combo {
     flex-wrap: wrap;;
     
 }
-
+.grid :hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 .grid {
     column-gap: 15px;
     row-gap: 15px;}
@@ -522,7 +571,6 @@ div .horarios table {
     width: 100%;
 }
 /*fin footer*/
-
 @media only screen and (min-width:1000px) and (max-width:1366px) {
     h1 {font-size: 55px !important}
     h2 {font-size: 45px !important}
