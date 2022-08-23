@@ -1,35 +1,42 @@
 * {
-    padding: 0; 
-    margin: 0; 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: content-box;
+    color: rgb(255, 255, 255);
 }
+
 *::selection {
     color: white;
     background: rgb(114, 114, 114);
 }
+
 body {
-    background-image: url(./imagenes\ estilo/barbackground.jpg);
+    background-image: url(/imagenesestilo/barbackground.jpg);
 }
+
 /*navegacion*/
-.navegador {
+nav {
     display: inline;
     text-decoration: none;
-    color: white;
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
 }
-.navegador:hover {
-    background-color: rgb(59, 59, 59);
-}
+
 nav {
-    background-image:url(./imagenes\ estilo/backgroundbar2.jpg);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-image:url(/imagenesestilo/backgroundbar2.jpg);
     display: inline;
-    text-align: right;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* MODIFICADO CON BOOSTRAP
 nav {
     position: fixed;
     left: 0%;
@@ -47,7 +54,11 @@ nav a {
     padding-left: 10px;
     padding-right: 10px;
 }
+*/
+
 /*fin navegacion*/
+
+
 
 /*INDEX*/
 main {
@@ -56,9 +67,10 @@ main {
 
 main .portada {
     padding-top: 60px;
-    padding-bottom: 40px; 
-    margin-bottom: 100px; margin-top: 150px;
-    border: 8px solid white; 
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    border: 8px solid white;
     font-size: 30px;
     text-align: center;
     background-color: rgb(59, 59, 59);
@@ -66,13 +78,15 @@ main .portada {
     flex-direction: column;
     background-position: center;
 }
+
 h1 {
-    font-size: 45px; 
+    font-size: 45px;
     color: white;
     letter-spacing: 15px
 }
 
-.imagenicon {margin: auto;
+.imagenicon {
+    margin: auto;
     height: 350px;
     width: 350px;
     border: solid 8px white;
@@ -84,15 +98,15 @@ h1 {
 }
 
 .portada h3 {
-    font-size: 30px; 
+    font-size: 30px;
     color: white;
     margin-bottom: 50px;
 }
 
 .portada a {
-    padding:15px; 
-    text-decoration: none; 
-    color: white; 
+    padding: 15px;
+    text-decoration: none;
+    color: white;
     border: 3px solid;
     border-color: white;
     background-color: rgb(59, 59, 59)
@@ -103,20 +117,20 @@ h1 {
 }
 
 .portada p {
-    padding-top: 12%; 
-    font-size: 25px; 
+    padding-top: 5%;
+    font-size: 25px;
     color: white
 }
 
 article h2 {
-    font-size: 35px; 
-    color: white; 
+    font-size: 35px;
+    color: white;
     letter-spacing: 2px
 }
 
 article p {
-    font-size:25px; 
-    color: white; 
+    font-size: 25px;
+    color: white;
     text-align: left;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -126,60 +140,73 @@ article p {
 .imagenesnosotros {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
+
 .imagenesnosotros :hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
+
 .imagennosotros1 {
-    height: 400px; 
+    height: 400px;
     width: 400px;
     border: 3px solid white;
     margin: 1%;
 }
+
 .imagennosotros2 {
-    height: 400px; 
+    height: 400px;
     width: 400px;
     border: 3px solid white;
     margin: 1%;
 }
+
 .imagennosotros3 {
-    height: 400px; 
+    height: 400px;
     width: 400px;
     border: 3px solid white;
     margin: 1%;
 }
+
 .imagennosotros4 {
     height: 400px;
     width: 400px;
     border: 3px solid white;
     margin: 1%;
 }
+
 .sobrenosotros {
     border: 8px solid white;
     padding: 15px;
     background-color: rgb(59, 59, 59)
 }
+
 article h3 {
-    font-size: 30px; 
+    font-size: 30px;
     text-align: left;
     padding-top: 10px;
 }
-h3 a {color: white; 
-    text-decoration: none; 
+
+h3 a {
+    color: white;
+    text-decoration: none;
     text-align: justify
 }
+
 .link {
-    border: solid 3px; 
+    border: solid 3px;
     color: white;
     background-color: rgb(59, 59, 59);
-    display: block; 
-    padding: 15px; 
+    display: block;
+    padding: 15px;
     display: inline-block
 }
+
 .link:hover {
-    background-color: rgb(0,0,0)
+    background-color: rgb(0, 0, 0)
 }
+
 /*fin sobre nosotros*/
 
 /*promociones*/
@@ -189,17 +216,44 @@ h3 a {color: white;
     padding: 15px;
     margin-top: 20px;
 }
+
 .promociones h2 {
-    font-size: 35px; 
-    color: white; 
+    font-size: 35px;
+    color: white;
     letter-spacing: 2px
 }
+
 .promociones h3 {
     font-size: 30px;
     color: white;
     text-align: left;
     padding-top: 10px
 }
+
+.slides {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.slides img {
+    width: 90vw;
+}
+
+.promociones a {
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    border: 3px solid white;
+}
+
+.promociones a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* MODIFICADO CON BOOTSTRAP
 .promociones ul li{
     font-size: 25px;
     color: white;
@@ -235,16 +289,9 @@ h3 a {color: white;
     border: 3px solid white;
     margin: 1%;
 }
-.promociones a {
-    font-size: 25px;
-    color: white;
-    text-align: right;
-    text-decoration: none;
-    border: 3px solid white;
-}
-.promociones a:hover {
-    background-color: rgb(0, 0, 0);
-}
+*/
+
+
 /*fin promociones*/
 
 /*reservas*/
@@ -255,17 +302,51 @@ h3 a {color: white;
     margin-top: 20px
 }
 article .reservas h2 {
-    font-size: 20px; 
-    color: white; 
+    font-size: 20px;
+    color: white;
     letter-spacing: 2px
 }
 .reservas h3 {
     font-size: 30px;
     color: white;
-    text-align: left;
-    padding-top: 10px;
-    margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 1%;
 }
+.container {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    padding: 1%;
+    border: 3px solid white;
+}
+.cajas {
+    color: rgb(59, 59, 59);
+    border-radius: 5px;
+    margin: 1% 0;
+    background-color: white;
+    border: 2px solid white;
+}
+.cajas:hover {
+    border: 2px solid #000;
+}
+#npersonas {color: rgb(59, 59, 59);}
+.btn {
+    height: 40px;
+    padding: 1% 5%;
+    border-radius: 5px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid white
+}
+.btn:hover {
+    box-shadow: 3px 3px 5px #000;
+    background-color: white;
+    color: #000;
+}
+/*
 .reservas form {
     border: 3px solid white; 
     background-color: rgb(59, 59, 59);
@@ -276,6 +357,7 @@ article .reservas h2 {
 .reservas form input {
     margin-left: 5px;
     margin-right: 5px;
+    color: rgb(59, 59, 59);
 }
 .reservas form a {
     color: white;
@@ -287,11 +369,13 @@ article .reservas h2 {
 
 
 /*MENU*/
-#menu {font-size: 45;
+#menu {
+    font-size: 45;
     display: flex;
     flex-flow: column wrap;
     margin-top: 12vh;
 }
+
 section table {
     border: 8px solid white;
     font-size: 18px;
@@ -299,6 +383,7 @@ section table {
     padding: 5px;
     background-color: rgb(59, 59, 59);
 }
+
 section table td {
     padding: 10px;
 }
@@ -306,48 +391,69 @@ section table td {
 section .comida {
     margin: 10px;
 }
+
 section .bebida {
     margin: 10px;
 }
+
 section .combo {
     margin: 10px;
 }
 
-.comida :hover{
+.comida :hover {
     animation-name: transparente;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 2s;
     animation-delay: 0.1s;
-}
-@keyframes transparente {
-0%{opacity: 0.5;}
-100%{opacity: 1;}
 }
 
-.bebida :hover{
-    animation-name: transparente;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
-}
 @keyframes transparente {
-0%{opacity: 0.5;}
-100%{opacity: 1;}
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.combo :hover{
+.bebida :hover {
     animation-name: transparente;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 2s;
     animation-delay: 0.1s;
 }
+
 @keyframes transparente {
-0%{opacity: 0.5;}
-100%{opacity: 1;}
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
+.combo :hover {
+    animation-name: transparente;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+@keyframes transparente {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /*fin MENU*/
 
 
@@ -357,29 +463,42 @@ section .combo {
 /*PROMOCIONES*/
 #promo {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     margin-top: 12vh;
 }
+
 .promo {
     border: 8px solid white;
     background-color: rgb(59, 59, 59);
-    padding: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+.promo img {
+    margin: auto;
+    padding: 1%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
 }
 .promo h3 {
     color: white;
     font-size: 30px;
 }
+
 .promo ul li {
     font-size: 25;
     color: white;
     padding: 5px 5px 5px 0px;
 }
+
 .promo a {
     border: 1px solid white;
 }
+
 .promo a:hover {
     background-color: black
 }
+
 /*fin PROMOCIONES*/
 
 
@@ -391,14 +510,16 @@ section .combo {
     flex-flow: column wrap;
     margin-top: 12vh;
 }
+
 .reserva {
     border: 8px solid white;
-    padding:5px; 
-    margin: 5px; 
-    font-size: 18px; 
-    color: white; 
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+    color: white;
     background-color: rgb(59, 59, 59)
 }
+
 /*fin RESERVAR*/
 
 
@@ -407,86 +528,153 @@ section .combo {
 #nosotros {
     display: flex;
     flex-flow: column wrap;
-    margin-top: 12vh 
+    margin-top: 12vh
 }
+
 #nosotros h1 {
     font-size: 45px;
 }
+
 #nosotros h2 {
-    font-size: 35px; 
+    font-size: 35px;
     color: white;
     margin-bottom: 20px;
 }
+
 #nosotros section {
     border: 8px solid white;
     padding: 5px;
-    background-color: rgb(59, 59, 59);}
-#nosotros p { 
-    font-size: 25px; color: white; 
-    text-align: justify; 
+    background-color: rgb(59, 59, 59)
+}
+
+#nosotros p {
+    font-size: 25px;
+    color: white;
+    text-align: justify;
     padding: 5px
 }
+
 #nosotros article {
-    border: 8px solid white; 
-    background-color: rgb(59, 59, 59); 
-    padding: 5px; 
+    border: 8px solid white;
+    background-color: rgb(59, 59, 59);
+    padding: 5px;
     margin-top: 15px;
 }
+
 #nosotros h3 {
     font-size: 30px;
     color: white;
 }
+
 #nosotros img {
     height: 220px;
     width: 220px;
     border: 5px solid white;
     border-radius: 15px;
-    margin: 1%; 
+    margin: 1%;
     padding: 1%;
 }
+
 .grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "aaa1 aaa2 aaa3" "aaa4 aaa5 aaa6" "aaa7 aaa8 aaa9" "aaa10";
+    grid-template-areas: "aaa1 aaa2 aaa3""aaa4 aaa5 aaa6""aaa7 aaa8 aaa9""aaa10";
     display: flex;
-    flex-wrap: wrap;;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.grid :hover{
+
+.grid :hover {
     transform: scale(1.2);
     transition: 0.2s;
 }
+
 .grid {
     column-gap: 15px;
-    row-gap: 15px;}
+    row-gap: 15px;
+}
 
 /*fin SOBRE NOSOTROS*/
 
 
 /*footer*/
 footer .contactofooter {
-    font-size: 50px; 
+    font-size: 50px;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
-    text-align: left;
+    text-align: center;
 }
+
 footer {
     border: 8px solid white;
     background-color: rgb(59, 59, 59);
-    padding: 1%;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: "col1" "col2" "col3" "col4";
-    display: flex;
-    flex-flow: row wrap;
+    margin: 1%;
 }
 
+footer a {
+    display: block;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+#link {
+    border: 3px solid white;
+    padding: 1%;
+    margin: 1%;
+}
+
+#email {
+    max-width: 150px;
+    color: rgb(59, 59, 59);
+}
+
+.row {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#imgfooter {
+    width: 10vw
+}
+
+div .horarios {
+    border: 3px solid white;
+    margin: 1%;
+    padding: 1%;
+}
+
+div .horarios h5 {
+    font-size: 30px;
+}
+
+footer td {
+    border: 3px solid white;
+}
+
+.table-responsive {
+    display: inline;
+}
+
+#copyright {
+    display: block;
+    margin: auto;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    max-width: 100vw;
+}
+
+
+/* reemplazado por bootsrap
 footer h5 {
     font-size: 30px;
     color: white;
@@ -532,45 +720,26 @@ div .col3 p {
     font-size: 25px;
     color: white;
     padding-bottom: 1%;}
+    
+    div .col4 {
+        border: 3px solid white;
+        padding: 1%;
+        margin: 1%;
+    }
+    div .col4 p {
+        font-size: 25px;
+        color: white; 
+        padding: 1%;
+    }
+    div .col4 iframe {
+        height: 200px;
+    }
+    */
 
-div .col4 {
-    border: 3px solid white;
-    padding: 1%;
-    margin: 1%;
-}
-div .col4 p {
-    font-size: 25px;
-    color: white; 
-    padding: 1%;
-}
-div .col4 iframe {
-    height: 200px;
-    width: 100%
-}
 
-div .horarios {
-    border: 3px solid white;
-    margin: 1%;
-    padding: 1%;
-}
-div .horarios h5 {
-    font-size: 30px ;
-}
-div .horarios table {
-    border: 2px solid white; 
-    font-size: 18px;color:white; 
-    text-align: center
-}
 
-#copyright {
-    border: 3px solid white;
-    margin: auto; 
-    padding: 1%;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-/*fin footer*/
+/* reemplazado por boostrap
+    fin footer*
 @media only screen and (min-width:1000px) and (max-width:1366px) {
     h1 {font-size: 55px !important}
     h2 {font-size: 45px !important}
@@ -598,3 +767,4 @@ div .horarios table {
     #reserva {margin-top: 16vh}
     #menu {margin-top: 16vh}
 }
+*/

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="pub, bar, cocteles, baile, reserva, comidas, cerveza, muúsica, show">
-    <meta name="description" content="ZONA-CERO es un pub en el barrio de Morón, donde hay shows en vivo, cocteles, baile y música. Suele ser muy concurrido, se recomienda hacer reserva">
+    <meta name="description"
+        content="ZONA-CERO es un pub en el barrio de Morón, donde hay shows en vivo, cocteles, baile y música. Suele ser muy concurrido, se recomienda hacer reserva">
     <meta name="author" content="Lautaro Ferrari">
     <meta name="copyright" content="Lautaro Ferrari">
     <meta name="robots" content="index">
     <title>ZONA-CERO</title>
     <link rel="icon" href="./imagenes/Zona-CERO.ico">
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./estilos/estilo.css">
 </head>
+
 <body>
     <header>
-        <nav>
+        <!--        <nav>
             <h3>ZONA-CERO</h3>
             <a href="index.html"class="navegador">Inicio</a>
             <a href="Sobre Nosotros.html"class="navegador">Sobre Nosotros</a>
@@ -23,154 +28,214 @@
             <a href="Reservar.html"class="navegador">Reservar</a>
             <a href="Menu.html"class="navegador">Consultá el menú</a>
         </nav>
-    </header>
-    <div>
-<!--PORTADA-->
-    <main>
-        <section class="portada">
-        <img class="imagenicon" src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
-        <h1>ZONA-CERO</h1>
-        <h3>Estás a un paso de vivir una experiencia única</h3>
-        <h6>
-            <a href="Reservar.html">Hacé click aqui para realizar tu reserva</a>
-        </h6>
-        <p>Encontranos a unas cuadras del centro de Ramos Mejia, Buenos Aires</p>
-        </section>
-<!-- Fin PORTADA-->
-<!--Sobre Nosotros-->
-    <article class="sobrenosotros">
-        <h2>Un poco sobre Nosotros y lo que hacemos</h2>
-        <div class="imagenesnosotros">
-            <img class="imagennosotros1" src="./imagenes/bar 1.jpg">
-            <img class="imagennosotros2" src="./imagenes/bar 2.jpg">
-            <img class="imagennosotros3" src="./imagenes/bar 3.jpg">
-            <img class="imagennosotros4" src="./imagenes/bar 4.jpg">
-        </div>
-        <p>ZONA-CERO es un lugar ideal para encontrarse con amigos, escuchar música, y bailar, con bandas en vivo y shows todos los fines de semana disfrutando de un variado menu, acompañado de una enorme variedad de cocteles y cervezas de primer nivel, para todos los gustos</p>
-        <h3 class="link">
-            <a href="./Sobre Nosotros.html">¿Querés saber mas acerca de nuestras propuestas o ver nuestras fotos? Hacé click aquí</a>
-        </h3>
-    </article>
-<!--Fin Sobre Nosotros-->
-<!--Promociones-->
-    <article class="promociones">
-        <h2>Promociones vigentes</h2>
-        <h3>Solo con reservas</h3>
-        <ul>
-            <li>Happy Hour en cervezas a 50% OFF desde las 20:00hs hasta la 01:00hs de Lunes a Jueves</li>
-            <li>Haciendo una reserva para 10 personas o mas de Lunes a Jueves una bebida sin cargo por persona</li>
-            <li>Los días Sábado 25% OFF desde las 21:00hs en pizzas y cervezas seleccionadas</li>
-        </ul>
-        <div class="imagenespromo">
-            <img class="imagenespromociones1" src="./imagenes/comida 1.jpg">
-            <img class="imagenespromociones2" src="./imagenes/comida 2.jpg">
-            <img class="imagenespromociones3" src="./imagenes/comida 3.jpg">
-            <img class="imagenespromociones4" src="./imagenes/comida 4.jpg">
-        </div>
-        <br>
-        <a href="./Promociones.html">Para acceder a todas nuestras promos hacé click acá</a>
-    </article>
-<!--Fin Promociones-->
-<!--Reservas-->
-    <article class="reservas">
-        <h2>Hace tu reserva</h2>
-        <h3>Consultá las fechas disponibles</h3>
-        <form action="get">
-            <label><input type="date" min="2022-07-19" name="fecha" required></label>
-            <label><input type="radio" required>19:00 Hs</label>
-            <label><input type="radio" required>19:30 Hs</label>
-            <label><input type="radio" required>20:00 Hs</label>
-            <label><input type="radio" required>20:30 Hs</label>
-            <label><input type="radio" required>21:00 Hs</label>
-            <label><input type="number" min="1" max="16" required>Cantidad de personas</label>
-            <input type="submit" value="Continuar">
-            <input type="reset" value="Limpiar">
-            <!--Temporal (se necesita JavaScript)-->
-            <br>
-            <a href="./Reservar.html">Hacé click aqui para confirmar tu reserva</a>
-            <!--Temporal (se necesita JavaScript)-->
-        </form>
-    </article>
-<!--Fin Reservas-->
-    </main>
-    <footer>
-        <h2 class="contactofooter">Contactanos</h2>
-            <div class="footer">
-            <div class="col1">
-                <ul>
-                    <li>
-                        <img src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
-                    </li>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="Sobre Nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="Promociones.html">Promociones</a>
-                    </li>
-                    <li>
-                        <a href="Reservar.html">Reservar</a>
-                    </li>
-                    <li>
-                        <a href="Menu.html">consultá el Menú</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col2">
-            <h5>Contacto y Redes Sociales</h5>
-            <ul>
-                <li>Teléfono: 11111111</li>
-                <li>WhatsApp: +54 911 1111111111</li>
-                <li>Correo electrónico: ZONA-CERO@gmail.com</li>
-                <li>
-                    <a href="https://www.facebook.com/">facebook</a>
+-->
+        <nav class="navbar navbar-expand-sm bg-white navbar-white fixed-top container-fluid">
+            <h2> ZONA-CERO </h2>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="https://www.instagram.com/">instagram</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Sobre Nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Reservar.html">Reservar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/Menu.html">Consultá el menú</a>
                 </li>
             </ul>
+        </nav>
+    </header>
+    <div>
+        <!--PORTADA-->
+        <main>
+            <section class="portada">
+                <img class="imagenicon" src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
+                <h1>ZONA-CERO</h1>
+                <h3>Estás a un paso de vivir una experiencia única</h3>
+                <h6>
+                    <a href="./pages/Reservar.html">Hacé click aqui para realizar tu reserva</a>
+                </h6>
+                <p>Encontranos a unas cuadras del centro de Ramos Mejia, Buenos Aires</p>
+            </section>
+            <!-- Fin PORTADA-->
+            <!--Sobre Nosotros-->
+            <article class="sobrenosotros">
+                <h2>Un poco sobre Nosotros y lo que hacemos</h2>
+                <div class="imagenesnosotros">
+                    <img class="imagennosotros1" src="./imagenes/bar 1.jpg">
+                    <img class="imagennosotros2" src="./imagenes/bar 2.jpg">
+                    <img class="imagennosotros3" src="./imagenes/bar 3.jpg">
+                    <img class="imagennosotros4" src="./imagenes/bar 4.jpg">
+                </div>
+                <p>ZONA-CERO es un lugar ideal para encontrarse con amigos, escuchar música, y bailar, con bandas en
+                    vivo y shows todos los fines de semana disfrutando de un variado menu, acompañado de una enorme
+                    variedad de cocteles y cervezas de primer nivel, para todos los gustos</p>
+                <h3 class="link">
+                    <a href="./pages/Sobre Nosotros.html">¿Querés saber mas acerca de nuestras propuestas o ver nuestras
+                        fotos? Hacé click aquí</a>
+                </h3>
+            </article>
+            <!--Fin Sobre Nosotros-->
+            <!--Promociones-->
+            <article class="promociones">
+                <h2>Promociones vigentes</h2>
+                <h3>Solo con reservas</h3>
+                <ul>
+                    <li>Happy Hour en cervezas a 50% OFF desde las 20:00hs hasta la 01:00hs de Lunes a Jueves</li>
+                    <li>Haciendo una reserva para 10 personas o mas de Lunes a Jueves una bebida sin cargo por persona
+                    </li>
+                    <li>Los días Sábado 25% OFF desde las 21:00hs en pizzas y cervezas seleccionadas</li>
+                </ul>
+                <div class="slides">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/comida 1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/comida 2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/comida 3.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/comida 4.jpg">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!--
+                <div class="imagenespromo">
+                    <img class="imagenespromociones1" src="./imagenes/comida 1.jpg">
+                    <img class="imagenespromociones2" src="./imagenes/comida 2.jpg">
+                    <img class="imagenespromociones3" src="./imagenes/comida 3.jpg">
+                    <img class="imagenespromociones4" src="./imagenes/comida 4.jpg">
+                </div>
+                -->
+                <br>
+                <a href="./pages/Promociones.html">Para acceder a todas nuestras promos hacé click acá</a>
+            </article>
+            <!--Fin Promociones-->
+            <!--Reservas-->
+            <article class="reservas">
+                <h2>Hace tu reserva</h2>
+                <h3>Consultá las fechas disponibles</h3>
+                <div class="container">
+                    <form action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5"
+                        autocomplete="off">
+                        <label for="nombre">Nombre</label></br>
+                        <input type="text" name="nombre" id="nombre" class="cajas"></br>
+                        <label for="email">Email</label></br>
+                        <input type="email" name="email" id="email" class="cajas"></br>
+                        <label for="telefono">Teléfono</label></br>
+                        <input type="number" name="telefono" id="telefono" class="cajas"></br>
+                        <label for="fecha-hora">Fecha y hora</label></br>
+                        <input type="datetime-local" id="fecha" name="fecha-hora" class="cajas"></br>
+                        <label for="cantidad"><input type="number" min="1" max="16" required id="npersonas">Cantidad de personas</label></br>
+                        <input type="submit" value="enviar" name="submit" class="btn">
+<!--
+Temporal (se necesita JavaScript)
+-->
+                        <br>
+                        <a href="./pages/Reservar.html">Hacé click aqui para confirmar tu reserva</a>
+                        <!--Temporal (se necesita JavaScript)-->
+                    </form>
+            </article>
+            <!--Fin Reservas-->
+        </main>
+        <footer>
+            <h2 class="contactofooter">Contactanos</h2>
+            <div class="row">
+                <!--links-->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
+                    <img src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO" id="imgfooter">
+                    <a href="index.html" class="text-decoration-none">Inicio</a>
+                    <a href="./pages/Sobre Nosotros.html">Sobre Nosotros</a>
+                    <a href="./pages/Promociones.html">Promociones</a>
+                    <a href="./pages/Reservar.html">Reservar</a>
+                    <a href="./pages/Menu.html">consultá el Menú</a>
+                </div>
+                <!--redes sociales-->
+                <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3" id="link">
+                    <h5>Contacto y Redes Sociales</h5>
+                    <p>Teléfono: 11111111</p>
+                    <p>WhatsApp: +54 911 1111111111</p>
+                    <p>Correo electrónico: ZONA-CERO@gmail.com</p>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+                <!--suscribirse-->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
+                    <h5>Notificaciones y Promociones</h5>
+                    <p>Suscribite a nuestro club, recibí notificaciones acerca de nuevos shows y accedé a las mejores
+                        promociones
+                    </p>
+                    <form>
+                        <input type="email" value="Ingresa tu E-Mail" required id="email">
+                        <input type="submit" value="Confirmar">
+                    </form>
+                </div>
+                <!--direccion-->
+                <div class="container-fluid">
+                    <h5>Donde nos encontramos</h5>
+                    <p>Nos encontramos en Av. Pres. Perón 351, B1707 Morón, Provincia de Buenos Aires</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6636651303734!2d-58.57119266826169!3d-34.6381663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f16ca6e635%3A0x115cf6e735662c30!2sAv.%20Pres.%20Per%C3%B3n%20351%2C%20B1707ABD%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657947322718!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="container-fluid">
+                    <h5>horarios</h5>
+                    <table class="table-responsive">
+                        <tr>
+                            <td>Lunes a viernes</td>
+                            <td>Sábado</td>
+                            <td>Domingo</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 Pm a 02:00 Am</td>
+                            <td>19:00 Pm a 06:00 Am</td>
+                            <td>11:00 Am a 17:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="col3">
-            <h5>Notificaciones y Promociones</h5>
-            <p>Suscribite a nuestro club, recibí notificaciones acerca de nuevos shows y accedé a las mejores promociones</p>
-            <form>
-                <input type="email" value="Ingresa tu correo electrónico" required>
-                <input type="submit" value="Confirmar">
-            </form>
-            </div>
-            <div class="col4">
-                <h5>Donde nos encontramos</h5>
-                <p>Nos encontramos en Av. Pres. Perón 351, B1707 Morón, Provincia de Buenos Aires</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6636651303734!2d-58.57119266826169!3d-34.6381663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f16ca6e635%3A0x115cf6e735662c30!2sAv.%20Pres.%20Per%C3%B3n%20351%2C%20B1707ABD%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657947322718!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <!-- SERÁ ADAPTADA CON BOOSTRAP
-            <div class="horarios">
-                <h5>horarios</h5>
-                <table border="1 Px">
-                    <tr>
-                        <td>Lunes</td>
-                        <td>Martes</td>
-                        <td>Miércoles</td>
-                        <td>Jueves</td>
-                        <td>viernes</td>
-                        <td>Sábado</td>
-                        <td>Domingo</td>
-                    </tr>
-                    <tr>
-                        <td>19:00 Pm a 02:00 Am</td>
-                        <td>19:00 Pm a 02:00 Am</td>
-                        <td>19:00 Pm a 02:00 Am</td>
-                        <td>19:00 Pm a 02:00 Am</td>
-                        <td>19:00 Pm a 02:00 Am</td>
-                        <td>19:00 Pm a 06:00 Am</td>
-                        <td>11:00 Am a 17:00 PM</td>
-                    </tr>
-                </table>
-            </div>-->
-            </div>
-    <div id="copyright">ZONA-CERO Copyright&copy; 2022 - Lautaro Ferrari - Todos los derechos reservados</div>
-    </footer>
+            <div class="footer-copyright text-center py-3"> Copyright&copy ZONA-CERO; 2022 - Lautaro Ferrari - Todos los
+                derechos reservados</div>
+        </footer>
+
+
+        <!--script boostrap-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
