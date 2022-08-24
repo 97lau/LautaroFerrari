@@ -23,7 +23,6 @@ nav {
 }
 
 nav {
-    background-image: url(./imagenes\ estilo/backgroundbar2.jpg);
     background-image:url(/imagenesestilo/backgroundbar2.jpg);
     display: inline;
 }
