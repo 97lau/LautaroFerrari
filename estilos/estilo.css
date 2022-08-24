@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(./imagenes\ estilo/barbackground.jpg);
+    background-image: url(/imagenesestilo/barbackground.jpg);
 }
 
 /*navegacion*/
@@ -24,6 +24,7 @@ nav {
 
 nav {
     background-image: url(./imagenes\ estilo/backgroundbar2.jpg);
+    background-image:url(/imagenesestilo/backgroundbar2.jpg);
     display: inline;
 }
 
