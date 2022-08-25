@@ -19,32 +19,23 @@
 
 <body>
     <header>
-        <!--        <nav>
-            <h3>ZONA-CERO</h3>
-            <a href="index.html"class="navegador">Inicio</a>
-            <a href="Sobre Nosotros.html"class="navegador">Sobre Nosotros</a>
-            <a href="Promociones.html"class="navegador">Promociones</a>
-            <a href="Reservar.html"class="navegador">Reservar</a>
-            <a href="Menu.html"class="navegador">Consultá el menú</a>
-        </nav>
--->
         <nav class="navbar navbar-expand-sm bg-white navbar-white fixed-top container-fluid">
             <h2> ZONA-CERO </h2>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link text-white" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/Sobre Nosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link text-white" href="pages/Sobre Nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/Promociones.html">Promociones</a>
+                    <a class="nav-link text-white" href="pages/Promociones.html">Promociones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/Reservar.html">Reservar</a>
+                    <a class="nav-link text-white" href="pages/Reservar.html">Reservar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/Menu.html">Consultá el menú</a>
+                    <a class="nav-link text-white" href="pages/Menu.html">Consultá el menú</a>
                 </li>
             </ul>
         </nav>
@@ -53,11 +44,11 @@
         <!--PORTADA-->
         <main>
             <section class="portada">
-                <img class="imagenicon" src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
+                <img class="imagenicon img-fluid" src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
                 <h1>ZONA-CERO</h1>
                 <h3>Estás a un paso de vivir una experiencia única</h3>
                 <h6>
-                    <a href="pages/Reservar.html">Hacé click aqui para realizar tu reserva</a>
+                    <a href="pages/Reservar.html" class="text-white">Hacé click aqui para realizar tu reserva</a>
                 </h6>
                 <p>Encontranos a unas cuadras del centro de Ramos Mejia, Buenos Aires</p>
             </section>
@@ -75,7 +66,7 @@
                     vivo y shows todos los fines de semana disfrutando de un variado menu, acompañado de una enorme
                     variedad de cocteles y cervezas de primer nivel, para todos los gustos</p>
                 <h3 class="link">
-                    <a href="pages/Sobre Nosotros.html">¿Querés saber mas acerca de nuestras propuestas o ver nuestras
+                    <a href="pages/Sobre Nosotros.html" class="text-white">¿Querés saber mas acerca de nuestras propuestas o ver nuestras
                         fotos? Hacé click aquí</a>
                 </h3>
             </article>
@@ -84,7 +75,7 @@
             <article class="promociones">
                 <h2>Promociones vigentes</h2>
                 <h3>Solo con reservas</h3>
-                <ul>
+                <ul class="list-unstyled">
                     <li>Happy Hour en cervezas a 50% OFF desde las 20:00hs hasta la 01:00hs de Lunes a Jueves</li>
                     <li>Haciendo una reserva para 10 personas o mas de Lunes a Jueves una bebida sin cargo por persona
                     </li>
@@ -123,16 +114,8 @@
                         </a>
                     </div>
                 </div>
-                <!--
-                <div class="imagenespromo">
-                    <img class="imagenespromociones1" src="./imagenes/comida 1.jpg">
-                    <img class="imagenespromociones2" src="./imagenes/comida 2.jpg">
-                    <img class="imagenespromociones3" src="./imagenes/comida 3.jpg">
-                    <img class="imagenespromociones4" src="./imagenes/comida 4.jpg">
-                </div>
-                -->
                 <br>
-                <a href="pages/Promociones.html">Para acceder a todas nuestras promos hacé click acá</a>
+                <a href="pages/Promociones.html" class="text-white">Para acceder a todas nuestras promos hacé click acá</a>
             </article>
             <!--Fin Promociones-->
             <!--Reservas-->
@@ -151,13 +134,13 @@
                         <label for="fecha-hora">Fecha y hora</label></br>
                         <input type="datetime-local" id="fecha" name="fecha-hora" class="cajas"></br>
                         <label for="cantidad"><input type="number" min="1" max="16" required id="npersonas">Cantidad de personas</label></br>
-                        <input type="submit" value="enviar" name="submit" class="btn">
+                        <input type="submit" value="enviar" name="submit" class="btn text-white">
 <!--
 Temporal (se necesita JavaScript)
 -->
                         <br>
-                        <a href="pages/Reservar.html">Hacé click aqui para confirmar tu reserva</a>
-                        <!--Temporal (se necesita JavaScript)-->
+                        <a href="pages/Reservar.html" class="text-white">Hacé click aqui para confirmar tu reserva</a>
+<!--Temporal (se necesita JavaScript)-->
                     </form>
             </article>
             <!--Fin Reservas-->
@@ -168,11 +151,11 @@ Temporal (se necesita JavaScript)
                 <!--links-->
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
                     <img src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO" id="imgfooter">
-                    <a href="#" class="text-decoration-none">Inicio</a>
-                    <a href="pages/Sobre Nosotros.html">Sobre Nosotros</a>
-                    <a href="pages/Promociones.html">Promociones</a>
-                    <a href="pages/Reservar.html">Reservar</a>
-                    <a href="pages/Menu.html">consultá el Menú</a>
+                    <a href="#" class="text-white">Inicio</a>
+                    <a href="pages/Sobre Nosotros.html" class="text-white">Sobre Nosotros</a>
+                    <a href="pages/Promociones.html" class="text-white">Promociones</a>
+                    <a href="pages/Reservar.html" class="text-white">Reservar</a>
+                    <a href="pages/Menu.html" class="text-white">consultá el Menú</a>
                 </div>
                 <!--redes sociales-->
                 <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3" id="link">
@@ -180,8 +163,8 @@ Temporal (se necesita JavaScript)
                     <p>Teléfono: 11111111</p>
                     <p>WhatsApp: +54 911 1111111111</p>
                     <p>Correo electrónico: ZONA-CERO@gmail.com</p>
-                    <a href="https://www.facebook.com/">Facebook</a>
-                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.facebook.com/" class="text-white">Facebook</a>
+                    <a href="https://www.instagram.com/" class="text-white">Instagram</a>
                 </div>
                 <!--suscribirse-->
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
@@ -203,9 +186,9 @@ Temporal (se necesita JavaScript)
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </iframe>
                 </div>
-                <div class="container-fluid">
+                <div>
                     <h5>horarios</h5>
-                    <table class="table-responsive">
+                    <table class="container-fluid text-center">
                         <tr>
                             <td>Lunes a viernes</td>
                             <td>Sábado</td>

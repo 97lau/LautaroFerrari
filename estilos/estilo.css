@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(/imagenesestilo/barbackground.jpg);
+    background-image: url(../imagenesestilo/barbackground.jpg);
 }
 
 /*navegacion*/
@@ -21,43 +21,16 @@ nav {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
 nav {
-    background-image:url(/imagenesestilo/backgroundbar2.jpg);
-    display: inline;
+    background-image:url(../imagenesestilo/backgroundbar2.jpg);
 }
-
-a {
-    color: white;
-}
-
-a:hover {
+.navbar-nav :hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    background-color: rgb(59, 59, 59);
+    border: white 1px solid;
 }
-
-/* MODIFICADO CON BOOSTRAP
-nav {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    width: 100vw
-}
-nav h3 {
-    font-size: 30px;
-    color: white; 
-    letter-spacing: 15px; 
-    padding-left: 20px;
-    text-align: start;
-}
-nav a { 
-    padding-left: 10px;
-    padding-right: 10px;
-}
-*/
-
 /*fin navegacion*/
-
 
 
 /*INDEX*/
@@ -86,9 +59,7 @@ h1 {
 }
 
 .imagenicon {
-    margin: auto;
-    height: 350px;
-    width: 350px;
+    margin: auto;;
     border: solid 8px white;
 }
 
@@ -252,46 +223,6 @@ h3 a {
     background-color: rgb(0, 0, 0);
 }
 
-
-/* MODIFICADO CON BOOTSTRAP
-.promociones ul li{
-    font-size: 25px;
-    color: white;
-    list-style: none;
-    float: left;
-    display: block;
-}
-.imagenespromo :hover {
-    filter:blur(4px);
-    transition: 0.3s;
-}
-.imagenespromociones1 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
-}
-.imagenespromociones2 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
-}
-.imagenespromociones3 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
-}
-.imagenespromociones4 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
-}
-*/
-
-
 /*fin promociones*/
 
 /*reservas*/
@@ -336,34 +267,14 @@ article .reservas h2 {
     padding: 1% 5%;
     border-radius: 5px;
     background-color: rgb(59, 59, 59);
-    color: white;
     font-weight: 700;
     text-transform: uppercase;
-    border: 3px solid white
 }
 .btn:hover {
-    box-shadow: 3px 3px 5px #000;
-    background-color: white;
-    color: #000;
-}
-/*
-.reservas form {
-    border: 3px solid white; 
     background-color: rgb(59, 59, 59);
-    font-size: 20px;
-    color: white;
-    padding: 15px
-}
-.reservas form input {
-    margin-left: 5px;
-    margin-right: 5px;
-    color: rgb(59, 59, 59);
-}
-.reservas form a {
-    color: white;
+    border: 3px solid white;
 }
 /*fin reservas*/
-
 /*fin INDEX*/
 
 
@@ -672,71 +583,6 @@ footer td {
     text-align: center;
     max-width: 100vw;
 }
-
-
-/* reemplazado por bootsrap
-footer h5 {
-    font-size: 30px;
-    color: white;
-    padding-top: 1%;
-    margin-bottom: 1%;
-    display: inline-block;
-    margin:1%;
-}
-ul {
-    list-style: none;
-    align-content: center;
-}
-div a {
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-}
-div .col1 {
-    border: 3px solid white;
-    padding: 1%;
-    margin: 1%;
-}
-div .col1 ul li img {
-    height:150px;
-}
-
-div .col2 {
-    border: 3px solid white;
-    margin: 1%;
-    padding: 1%;
-}
-div .col2 ul li {
-    font-size: 25px;
-    color:white
-}
-
-div .col3 {
-    border: 3px solid white;
-    padding: 1%;
-    margin: 1%;
-}
-div .col3 p {
-    font-size: 25px;
-    color: white;
-    padding-bottom: 1%;}
-    
-    div .col4 {
-        border: 3px solid white;
-        padding: 1%;
-        margin: 1%;
-    }
-    div .col4 p {
-        font-size: 25px;
-        color: white; 
-        padding: 1%;
-    }
-    div .col4 iframe {
-        height: 200px;
-    }
-    */
-
-
 
 /* reemplazado por boostrap
     fin footer*
