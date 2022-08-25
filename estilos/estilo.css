@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(./imagenesestilo/barbackground.jpg);
+    background-image: url(/imagenesestilo/barbackground.jpg);
 }
 
 /*navegacion*/
@@ -22,7 +22,7 @@ nav {
     color: rgb(255, 255, 255);
 }
 nav {
-    background-image:url(./imagenesestilo/backgroundbar2.jpg);
+    background-image:url(/imagenesestilo/backgroundbar2.jpg);
 }
 .navbar-nav :hover {
     color: rgb(255, 255, 255);
