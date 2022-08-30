@@ -135,8 +135,8 @@ body main .sobrenosotros h3 {
     display: block;
     padding: 15px;
     display: inline-block a;
-    display-text-decoration: none;
-    display-text-align: justify;
+    text-decoration: none;
+    text-align: justify;
 }
 
 body main .sobrenosotros .link:hover {
