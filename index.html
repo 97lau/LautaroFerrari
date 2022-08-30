@@ -47,7 +47,7 @@
                 <img class="imagenicon img-fluid" src="./imagenes/Zona-CERO - imagen.jpg" alt="ZONA-CERO" title="ZONA-CERO LOGO">
                 <h1>ZONA-CERO</h1>
                 <h3>Estás a un paso de vivir una experiencia única</h3>
-                <h6>
+                <h6 class="container">
                     <a href="pages/Reservar.html" class="text-white">Hacé click aqui para realizar tu reserva</a>
                 </h6>
                 <p>Encontranos a unas cuadras del centro de Ramos Mejia, Buenos Aires</p>
@@ -123,7 +123,7 @@
                 <h2>Hace tu reserva</h2>
                 <h3>Consultá las fechas disponibles</h3>
                 <div class="container">
-                    <form action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5"
+                    <div action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5"
                         autocomplete="off">
                         <label for="nombre">Nombre</label></br>
                         <input type="text" name="nombre" id="nombre" class="cajas"></br>
@@ -135,6 +135,8 @@
                         <input type="datetime-local" id="fecha" name="fecha-hora" class="cajas"></br>
                         <label for="cantidad"><input type="number" min="1" max="16" required id="npersonas">Cantidad de personas</label></br>
                         <input type="submit" value="enviar" name="submit" class="btn text-white">
+                    </div>
+                </div>
 <!--
 Temporal (se necesita JavaScript)
 -->

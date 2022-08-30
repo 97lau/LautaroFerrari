@@ -1,616 +1,501 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: content-box;
-    color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: white;
 }
 
-*::selection {
-    color: white;
-    background: rgb(114, 114, 114);
+* ::-moz-selection {
+  color: white;
+  background: #727272;
+}
+
+* ::selection {
+  color: white;
+  background: #727272;
 }
 
 body {
-    background-image: url(../imagenesestilo/barbackground.jpg);
+  background-image: url(../imagenesestilo/barbackground.jpg);
 }
 
-/*navegacion*/
-nav {
-    display: inline;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-nav {
-    background-image:url(../imagenesestilo/backgroundbar2.jpg);
-}
-.navbar-nav :hover {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: rgb(59, 59, 59);
-    border: white 1px solid;
-}
-/*fin navegacion*/
-
-
-/*INDEX*/
-main {
-    margin: 1%;
+body header nav {
+  display: inline;
+  text-decoration: none;
+  background-image: url(../imagenesestilo/backgroundbar2.jpg);
 }
 
-main .portada {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    margin-bottom: 100px;
-    margin-top: 150px;
-    border: 8px solid white;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgb(59, 59, 59);
-    display: flex;
-    flex-direction: column;
-    background-position: center;
+body header nav li :hover {
+  text-decoration: none;
+  background-color: #3b3b3b;
+  border: white 1px solid;
 }
 
-h1 {
-    font-size: 45px;
-    color: white;
-    letter-spacing: 15px
+body main {
+  margin: 1%;
 }
 
-.imagenicon {
-    margin: auto;;
-    border: solid 8px white;
+body main .portada {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  margin-top: 10vh;
+  border: 8px solid white;
+  font-size: 30px;
+  text-align: center;
+  background-color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-position: center;
 }
 
-.imagenmain {
-    height: 400px;
-    border: solid 8px white
+body main .portada h1 {
+  font-size: 45px;
+  letter-spacing: 15px;
 }
 
-.portada h3 {
-    font-size: 30px;
-    color: white;
-    margin-bottom: 50px;
+body main .portada .imagenicon {
+  margin: auto;
+  border: 8px solid white;
 }
 
-.portada a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    border: 3px solid;
-    border-color: white;
-    background-color: rgb(59, 59, 59)
+body main .portada .imagenmain {
+  height: 400px;
+  border: 8px solid white;
 }
 
-.portada a:hover {
-    background-color: rgb(0, 0, 0);
+body main .portada h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
-.portada p {
-    padding-top: 5%;
-    font-size: 25px;
-    color: white
+body main .portada h6 {
+  padding: 1%;
+  text-decoration: none;
+  border: 3px solid white;
+  background-color: #3b3b3b;
 }
 
-article h2 {
-    font-size: 35px;
-    color: white;
-    letter-spacing: 2px
+body main .portada h6 a:hover {
+  background-color: black;
 }
 
-article p {
-    font-size: 25px;
-    color: white;
-    text-align: left;
-    padding-top: 10px;
-    margin-bottom: 20px;
+body main .portada p {
+  padding-top: 5%;
+  font-size: 25px;
 }
 
-/*sobre nosotros*/
-.imagenesnosotros {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+body main .sobrenosotros {
+  border: 8px solid white;
+  padding: 15px;
+  background-color: #3b3b3b;
 }
 
-.imagenesnosotros :hover {
-    transform: scale(1.1);
-    transition: 0.2s;
+body main .sobrenosotros img {
+  height: 400px;
+  width: 400px;
+  border: 3px solid white;
+  margin: 1%;
 }
 
-.imagennosotros1 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
+body main .sobrenosotros .imagenesnosotros :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.imagennosotros2 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
+body main .sobrenosotros h3 {
+  font-size: 30px;
+  text-align: left;
+  padding: 1%;
+  border: solid 3px;
+  background-color: #3b3b3b;
+  display: block;
+  padding: 15px;
+  display: inline-block a;
+  display-text-decoration: none;
+  display-text-align: justify;
 }
 
-.imagennosotros3 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
+body main .sobrenosotros .link:hover {
+  background-color: black;
 }
 
-.imagennosotros4 {
-    height: 400px;
-    width: 400px;
-    border: 3px solid white;
-    margin: 1%;
+body main .promociones {
+  border: 8px solid white;
+  background-color: #3b3b3b;
+  padding: 1%;
+  margin-top: 1%;
 }
 
-.sobrenosotros {
-    border: 8px solid white;
-    padding: 15px;
-    background-color: rgb(59, 59, 59)
+body main .promociones h2 {
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
-article h3 {
-    font-size: 30px;
-    text-align: left;
-    padding-top: 10px;
+body main .promociones h3 {
+  font-size: 30px;
+  text-align: left;
+  padding-top: 1%;
 }
 
-h3 a {
-    color: white;
-    text-decoration: none;
-    text-align: justify
+body main .promociones .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.link {
-    border: solid 3px;
-    color: white;
-    background-color: rgb(59, 59, 59);
-    display: block;
-    padding: 15px;
-    display: inline-block
+body main .promociones .slides img {
+  width: 90vw;
 }
 
-.link:hover {
-    background-color: rgb(0, 0, 0)
+body main .promociones a {
+  font-size: 25px;
+  text-align: right;
+  text-decoration: none;
+  border: 3px solid white;
 }
 
-/*fin sobre nosotros*/
-
-/*promociones*/
-.promociones {
-    border: 8px solid white;
-    background-color: rgb(59, 59, 59);
-    padding: 15px;
-    margin-top: 20px;
+body main .promociones a:hover {
+  background-color: black;
 }
 
-.promociones h2 {
-    font-size: 35px;
-    color: white;
-    letter-spacing: 2px
+body main .reservas {
+  border: 8px solid white;
+  background-color: #3b3b3b;
+  padding: 1%;
+  margin-top: 1%;
 }
 
-.promociones h3 {
-    font-size: 30px;
-    color: white;
-    text-align: left;
-    padding-top: 10px
+body main .reservas h2 {
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
-.slides {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+body main .reservas h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1%;
 }
 
-.slides img {
-    width: 90vw;
+body main .reservas .container {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #3b3b3b;
+  padding: 1%;
+  border: 3px solid white;
 }
 
-.promociones a {
-    font-size: 25px;
-    color: white;
-    text-align: right;
-    text-decoration: none;
-    border: 3px solid white;
+body main .reservas .cajas {
+  color: #3b3b3b;
+  border-radius: 5px;
+  margin: 1% 0;
+  background-color: white;
+  border: 2px solid white;
 }
 
-.promociones a:hover {
-    background-color: rgb(0, 0, 0);
+body main .reservas .cajas:hover {
+  border: 2px solid #000;
 }
 
-/*fin promociones*/
-
-/*reservas*/
-.reservas {
-    border: 8px solid white;
-    background-color: rgb(59, 59, 59);
-    padding: 15px;
-    margin-top: 20px
-}
-article .reservas h2 {
-    font-size: 20px;
-    color: white;
-    letter-spacing: 2px
-}
-.reservas h3 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-bottom: 1%;
-}
-.container {
-    width: auto;
-    margin: 0 auto;
-    text-align: center;
-    color: rgb(59, 59, 59);
-    padding: 1%;
-    border: 3px solid white;
-}
-.cajas {
-    color: rgb(59, 59, 59);
-    border-radius: 5px;
-    margin: 1% 0;
-    background-color: white;
-    border: 2px solid white;
-}
-.cajas:hover {
-    border: 2px solid #000;
-}
-#npersonas {color: rgb(59, 59, 59);}
-.btn {
-    height: 40px;
-    padding: 1% 5%;
-    border-radius: 5px;
-    background-color: rgb(59, 59, 59);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.btn:hover {
-    background-color: rgb(59, 59, 59);
-    border: 3px solid white;
-}
-/*fin reservas*/
-/*fin INDEX*/
-
-
-
-/*MENU*/
-#menu {
-    font-size: 45;
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 12vh;
+body main .reservas #npersonas {
+  color: #3b3b3b;
 }
 
-section table {
-    border: 8px solid white;
-    font-size: 18px;
-    color: white;
-    padding: 5px;
-    background-color: rgb(59, 59, 59);
+body main .reservas .btn {
+  height: 40px;
+  padding: 1% 5%;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-section table td {
-    padding: 10px;
+body main .reservas .btn:hover {
+  background-color: #3b3b3b;
+  border: 3px solid white;
 }
 
-section .comida {
-    margin: 10px;
+body main #menu {
+  font-size: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 12vh;
 }
 
-section .bebida {
-    margin: 10px;
+body main table {
+  border: 8px solid white;
+  font-size: 18px;
+  background-color: #3b3b3b;
 }
 
-section .combo {
-    margin: 10px;
+body main .table :hover {
+  -webkit-animation-name: transparente;
+          animation-name: transparente;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
-.comida :hover {
-    animation-name: transparente;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
+@-webkit-keyframes transparente {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes transparente {
-    0% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.bebida :hover {
-    animation-name: transparente;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
+body main #promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 12vh;
 }
 
-@keyframes transparente {
-    0% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
+body main .promo {
+  border: 8px solid white;
+  background-color: #3b3b3b;
+  padding: 1%;
+  margin: 1%;
 }
 
-.combo :hover {
-    animation-name: transparente;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
+body main .promo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: auto;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-@keyframes transparente {
-    0% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
+body main .promo h3 {
+  font-size: 30px;
 }
 
-/*fin MENU*/
-
-
-
-
-
-/*PROMOCIONES*/
-#promo {
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 12vh;
+body main .promo ul li {
+  font-size: 25;
+  padding: 5px 5px 5px 0px;
 }
 
-.promo {
-    border: 8px solid white;
-    background-color: rgb(59, 59, 59);
-    padding: 1%;
-    margin: 1%;
-}
-.promo img {
-    margin: auto;
-    padding: 1%;
-    height: auto;
-    justify-content: center;
-    align-content: center;
-}
-.promo h3 {
-    color: white;
-    font-size: 30px;
+body main .promo a {
+  border: 1px solid white;
 }
 
-.promo ul li {
-    font-size: 25;
-    color: white;
-    padding: 5px 5px 5px 0px;
+body main .promo a:hover {
+  background-color: black;
 }
 
-.promo a {
-    border: 1px solid white;
+body main h1 {
+  font-size: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 12vh;
 }
 
-.promo a:hover {
-    background-color: black
+body main .reserva {
+  border: 8px solid white;
+  padding: 1%;
+  font-size: 18px;
+  background-color: #3b3b3b;
 }
 
-/*fin PROMOCIONES*/
-
-
-
-/*RESERVAR*/
-#reserva {
-    font-size: 45px;
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 12vh;
+body main .reserva input {
+  color: #3b3b3b;
 }
 
-.reserva {
-    border: 8px solid white;
-    padding: 5px;
-    margin: 5px;
-    font-size: 18px;
-    color: white;
-    background-color: rgb(59, 59, 59)
+body #nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 12vh;
 }
 
-/*fin RESERVAR*/
-
-
-
-/*SOBRE NOSOTROS*/
-#nosotros {
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 12vh
+body #nosotros h1 {
+  font-size: 45px;
 }
 
-#nosotros h1 {
-    font-size: 45px;
+body #nosotros section {
+  border: 8px solid white;
+  padding: 5px;
+  background-color: #3b3b3b;
 }
 
-#nosotros h2 {
-    font-size: 35px;
-    color: white;
-    margin-bottom: 20px;
+body #nosotros section h2 {
+  font-size: 35px;
+  margin-bottom: 1%;
 }
 
-#nosotros section {
-    border: 8px solid white;
-    padding: 5px;
-    background-color: rgb(59, 59, 59)
+body #nosotros section p {
+  font-size: 25px;
+  text-align: justify;
+  padding: 1%;
 }
 
-#nosotros p {
-    font-size: 25px;
-    color: white;
-    text-align: justify;
-    padding: 5px
+body #nosotros article {
+  border: 8px solid white;
+  background-color: #3b3b3b;
+  padding: 1%;
+  margin-top: 1%;
 }
 
-#nosotros article {
-    border: 8px solid white;
-    background-color: rgb(59, 59, 59);
-    padding: 5px;
-    margin-top: 15px;
+body #nosotros article h3 {
+  font-size: 30px;
 }
 
-#nosotros h3 {
-    font-size: 30px;
-    color: white;
+body #nosotros article .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "aaa1 aaa2 aaa3" "aaa4 aaa5 aaa6" "aaa7 aaa8 aaa9" "aaa10";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
 }
 
-#nosotros img {
-    height: 220px;
-    width: 220px;
-    border: 5px solid white;
-    border-radius: 15px;
-    margin: 1%;
-    padding: 1%;
+body #nosotros article .grid :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "aaa1 aaa2 aaa3""aaa4 aaa5 aaa6""aaa7 aaa8 aaa9""aaa10";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+body #nosotros article img {
+  height: 220px;
+  width: 220px;
+  border: 5px solid white;
+  border-radius: 15px;
+  margin: 1%;
+  padding: 1%;
 }
 
-.grid :hover {
-    transform: scale(1.2);
-    transition: 0.2s;
+body footer {
+  border: 8px solid white;
+  background-color: #3b3b3b;
+  margin: 1%;
 }
 
-.grid {
-    column-gap: 15px;
-    row-gap: 15px;
+body footer .contactofooter {
+  font-size: 50px;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-/*fin SOBRE NOSOTROS*/
-
-
-/*footer*/
-footer .contactofooter {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
-    text-align: center;
+body footer .row {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-footer {
-    border: 8px solid white;
-    background-color: rgb(59, 59, 59);
-    margin: 1%;
+body footer .row #imgfooter {
+  width: 10vw;
 }
 
-footer a {
-    display: block;
+body footer .row #link {
+  border: 3px solid white;
+  padding: 1%;
+  margin: 1%;
 }
 
-iframe {
-    width: 100%;
+body footer .row #email {
+  max-width: 150px;
+  color: #3b3b3b;
 }
 
-footer h5 {
-    text-align: center;
+body footer .row a {
+  display: block;
 }
 
-#link {
-    border: 3px solid white;
-    padding: 1%;
-    margin: 1%;
+body footer .row iframe {
+  width: 100%;
 }
 
-#email {
-    max-width: 150px;
-    color: rgb(59, 59, 59);
+body footer .row h5 {
+  text-align: center;
+  font-size: 30px;
 }
 
-.row {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+body footer .row table {
+  display: inline;
 }
 
-#imgfooter {
-    width: 10vw
+body footer .row table td {
+  border: 3px solid white;
 }
 
-div .horarios {
-    border: 3px solid white;
-    margin: 1%;
-    padding: 1%;
+body footer #copyright {
+  display: block;
+  margin: auto;
+  padding: 1%;
+  text-align: center;
+  max-width: 100vw;
 }
-
-div .horarios h5 {
-    font-size: 30px;
-}
-
-footer td {
-    border: 3px solid white;
-}
-
-.table-responsive {
-    display: inline;
-}
-
-#copyright {
-    display: block;
-    margin: auto;
-    padding: 1%;
-    color: white;
-    text-align: center;
-    max-width: 100vw;
-}
-
-/* reemplazado por boostrap
-    fin footer*
-@media only screen and (min-width:1000px) and (max-width:1366px) {
-    h1 {font-size: 55px !important}
-    h2 {font-size: 45px !important}
-    h3 {font-size: 40px !important}
-    h5 {font-size: 40px !important}
-    p {font-size: 30px !important}
-    a {font-size: 30px !important}
-    li {font-size: 30px !important}
-    #nosotros {margin-top: 14vh;}
-    #promo {margin-top: 15vh}
-    #reserva {margin-top: 14vh;}
-    #menu {margin-top: 15vh}
-}
-
-@media only screen and (min-width:1367px) {
-    h1 {font-size: 65px !important}
-    h2 {font-size: 55px !important}
-    h3 {font-size: 50px !important}
-    h5 {font-size: 50px !important}
-    p {font-size: 35px !important}
-    a {font-size: 35px !important}
-    li {font-size: 35px !important}
-    #nosotros {margin-top: 16vh}
-    #promo {margin-top: 16vh}
-    #reserva {margin-top: 16vh}
-    #menu {margin-top: 16vh}
-}
-*/
+/*# sourceMappingURL=estilo.css.map */
