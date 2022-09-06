@@ -1,6 +1,17 @@
 $fondo:rgb(59, 59, 59);
 $titulos:45px;
 $contenedores:  8px solid white;
+
+$fontweight: (
+    normal: thin,
+    bold: bold
+    );
+
+@mixin container {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: 8px solid white;
+}
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +22,7 @@ $contenedores:  8px solid white;
         color: white;
         background: rgb(114, 114, 114);
     }   
+    
 }
 body {
     background-image: url(../imagenesestilo/barbackground.jpg);
@@ -34,20 +46,20 @@ body {
     main {
         margin: 1%;
         .portada {
+            @include container;
             padding-top: 1%;
             padding-bottom: 1%;
             margin-bottom: 1%;
             margin-top: 10vh;
-            border: $contenedores;
             font-size: 30px;
             text-align: center;
-            background-color:$fondo;
             display: flex;
             flex-direction: column;
             background-position: center;
             h1{
                 font-size: $titulos;
-                letter-spacing: 15px
+                letter-spacing: 15px;
+                font-weight: map-get($fontweight, bold);
             }
             .imagenicon {
                 margin: auto;;
@@ -76,14 +88,37 @@ body {
             }
         }
         .sobrenosotros {
-            border: $contenedores;
-            padding: 15px;
-            background-color:$fondo;
-            img{
-                height: 400px;
-                width: 400px;
-                border: 3px solid white;
-                margin: 1%;
+            @include container;
+            padding: 1%;
+            margin: 1%;
+            .imagenesnosotros{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                justify-content: space-evenly;
+                .imgbar1 {
+                    background-image:url(../imagenes/bar1.jpg);
+                    background-size: cover;
+                    height: 300px;
+                    width: 300px;
+                    border: 3px solid white;
+                    margin: 1%;
+                    display: inline-block;
+                    display: flex;
+                    flex-flow:row wrap;
+                }
+                .imgbar2 {
+                    background-image:url(../imagenes/bar2.jpg);
+                    @extend .imgbar1
+                }
+                .imgbar3 {
+                    background-image:url(../imagenes/bar3.jpg);
+                    @extend .imgbar1
+                }
+                .imgbar4 {
+                    background-image:url(../imagenes/bar4.jpg);
+                    @extend .imgbar1
+                }
             }
             .imagenesnosotros {
                 :hover {
@@ -99,7 +134,7 @@ body {
                 background-color:$fondo;
                 display: block;
                 padding: 15px;
-                display: inline-block
+                display: inline-block;
                 a {
                 text-decoration: none;
                 text-align: justify
@@ -110,10 +145,7 @@ body {
             }
         }
         .promociones {
-            border: $contenedores;
-            background-color:$fondo;
-            padding: 1%;
-            margin-top: 1%;
+            @extend .sobrenosotros;
             h2 {
                 font-size: 35px;
                 letter-spacing: 2px
@@ -121,7 +153,8 @@ body {
             h3 {
                 font-size: 30px;
                 text-align: left;
-                padding-top: 1%
+                padding-top: 1%;
+                border: none;
             }
             .slides {
                 display: flex;
@@ -130,6 +163,7 @@ body {
             }
             .slides img {
                 width: 90vw;
+                height: 80vh;
             }
             a {
                 font-size: 25px;
@@ -142,8 +176,7 @@ body {
             }
         }
         .reservas {
-            border: $contenedores;
-            background-color:$fondo;
+            @include container;
             padding: 1%;
             margin-top: 1%;
             h2 {
@@ -156,12 +189,11 @@ body {
                 margin-bottom: 1%;
             }
             .container {
+                @include container;
                 width: auto;
                 margin: 0 auto;
                 text-align: center;
-                color: rgb(59, 59, 59);
                 padding: 1%;
-                border: 3px solid white;
             }
             .cajas {
                 color: rgb(59, 59, 59);
@@ -191,6 +223,9 @@ body {
 /*fin INDEX*/
 /*MENU*/
     main {
+        h1{
+            font-weight: map-get($fontweight, bold);
+        }
         #menu {
             font-size: 45px;
             display: flex;
@@ -198,9 +233,8 @@ body {
             margin-top: 12vh;
         }
         table {
-            border: $contenedores;
+            @include container;
             font-size: 18px;
-            background-color:$fondo;
         }
         .table :hover {
             animation-name: transparente;
@@ -221,49 +255,62 @@ body {
 /*fin MENU*/
 /*PROMOCIONES*/
     main {
+        h1{
+            font-weight: map-get($fontweight, bold);
+        }
         #promo {
             display: flex;
             flex-flow: row wrap;
             margin-top: 12vh;
         }
-        .promo {
-            border: $contenedores;
-            background-color:$fondo;
-            padding: 1%;
-            margin: 1%;
-            img {
+        .row{
                 display: flex;
-                margin: auto;
-                padding: auto;
-                height: auto;
                 justify-content: center;
-                align-content: center;
-            }
-            h3 {
-                font-size: 30px;
-            }
-            ul {
-                li {
-                font-size: 25;
-                padding: 5px 5px 5px 0px;
+                align-items: center;
+            .promo {
+                border: $contenedores;
+                background-color:$fondo;
+                padding: 1%;
+                margin: 1%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                img {
+                    display: flex;
+                    margin: auto;
+                    padding: auto;
+                    height: auto;
+                    justify-content: center;
+                    align-content: center;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+                ul {
+                    li {
+                    font-size: 25;
+                    padding: 5px 5px 5px 0px;
+                    }
+                }
+                a {
+                    border: 1px solid white;
                 }
             }
-            a {
-                border: 1px solid white;
+            .promo a:hover {
+                background-color: black
             }
-        }
-        .promo a:hover {
-            background-color: black
         }
     }
 /*fin PROMOCIONES*/
 /*RESERVAR*/
     main {
         h1 {
-        font-size: 45px;
+        font-size: $titulos;
         display: flex;
         flex-flow: column wrap;
         margin-top: 12vh;
+        font-weight: map-get($fontweight, bold);
         }
         .reserva {
         border: $contenedores;
@@ -280,7 +327,8 @@ body {
     flex-flow: column wrap;
     margin-top: 12vh;
         h1 {
-            font-size: 45px;
+            font-size: $titulos;
+            font-weight: map-get($fontweight, bold);
         }
         section {
             border: $contenedores;
@@ -364,7 +412,7 @@ body {
             iframe {
                 width: 100%;
             }
-            h5 {
+            h4 {
                 text-align: center;
                 font-size: 30px;
             }
