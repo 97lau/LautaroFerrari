@@ -15,27 +15,56 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     </head>
     <body>
-        <header >
-                    <nav class="navbar navbar-expand-sm bg-white navbar-white fixed-top">
-                        <h2> ZONA-CERO </h2>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../pages/Promociones.html">Promociones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../pages/Reservar.html">Reservar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="../pages/Menu.html">Consultá el menú</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <header>
+<!--NAV BAR-->
+            <nav class="navbar navbar-expand-sm d-none d-sm-block bg-grey navbar-black">
+                <h2> ZONA-CERO </h2>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/Promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/Formá parte del Equipo.html">Formá parte del Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/Menu.html">Consultá el menú</a>
+                    </li>
+                </ul>
+            </nav>
+<!--FIN NAV BAR-->
+<!--COLAPSABLE NAV BAR-->
+            <nav class="navbar navbar-expand-md navbar-dark d-block d-sm-none">
+                <a class="navbar-brand" href="#">ZONA-CERO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/Promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/Formá parte del Equipo.html">Formá parte del Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/Menu.html">Consultá el menú</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+<!--FIN COLAPSABLE NAV BAR-->
                 </header>
         <main id="nosotros">
             <h1>Sobre Nosotros</h1>
@@ -50,16 +79,18 @@
             <article>
                 <h3>Por si te quedan dudas de que ZONA-CERO es un lugar especial te invitamos a que aprecies por vos mismo como son las noches acá</h3>
                 <div class="grid">
-                    <img class="aaa1 img-lfuid" src="../imagenes galeria/bartender 1.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
-                    <img class="aaa2 img-lfuid" src="../imagenes galeria/bartender 2.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
-                    <img class="aaa3 img-lfuid" src="../imagenes galeria/bartender 3.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
-                    <img class="aaa4 img-lfuid" src="../imagenes galeria/mesas 1.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
-                    <img class="aaa5 img-lfuid" src="../imagenes galeria/mesas 2.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
-                    <img class="aaa6 img-lfuid" src="../imagenes galeria/mesas 3.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
-                    <img class="aaa7 img-lfuid" src="../imagenes galeria/mesas 4.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
-                    <img class="aaa8 img-lfuid" src="../imagenes galeria/pista 1.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
-                    <img class="aaa9 img-lfuid" src="../imagenes galeria/pista 2.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
-                    <img class="aaa10 img-lfuid" src="../imagenes galeria/pista 3.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/bartender 1.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/bartender 2.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/bartender 3.jpg" alt="ZONA-CERO" title="bartender ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/mesas 1.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/mesas 2.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/mesas 3.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/mesas 4.jpg" alt="ZONA-CERO" title="mesas ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/pista 1.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/pista 2.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/pista 3.jpg" alt="ZONA-CERO" title="pista ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/comida 1.jpg" alt="ZONA-CERO" title="comida ZONA-CERO">
+                    <img class="img-fluid" src="../imagenes galeria/comida 2.jpg" alt="ZONA-CERO" title="comida ZONA-CERO">
                 </div>
             </article>
         </main>
@@ -73,56 +104,74 @@
                         <a class="text-white" href="../index.html">Inicio</a>
                         <a class="text-white" href="#">Sobre Nosotros</a>
                         <a class="text-white" href="../pages/Promociones.html">Promociones</a>
-                        <a class="text-white" href="../pages/Reservar.html">Reservar</a>
+                        <a class="text-white" href="../pages/Formá parte del Equipo.html">Formá parte del Equipo</a>
                         <a class="text-white" href="../pages/Menu.html">consultá el Menú</a>
                         </div>
-                    <!--redes sociales-->
-                    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3 " id="link">
-                        <h4>Contacto y Redes Sociales</h4>
-                        <p>Teléfono: 11111111</p>
-                        <p>WhatsApp: +54 911 1111111111</p>
-                        <p>Correo electrónico: ZONA-CERO@gmail.com</p>
-                        <a class="text-white" href="https://www.facebook.com/">Facebook</a>
-                        <a class="text-white" href="https://www.instagram.com/">Instagram</a>
-                    </div>
-                    <!--suscribirse-->
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
-                        <h4>Notificaciones y Promociones</h4>
-                        <p>Suscribite a nuestro club, recibí notificaciones acerca de nuevos shows y accedé a las mejores
-                            promociones
-                        </p>
-                        <form>
-                            <input type="email" value="Ingresa tu E-Mail" required id="email">
-                            <input type="submit" value="Confirmar">
-                        </form>
-                    </div>
-                    <!--direccion-->
-                    <div class="container-fluid">
-                        <h4>Donde nos encontramos</h4>
-                        <p>Nos encontramos en Av. Pres. Perón 351, B1707 Morón, Provincia de Buenos Aires</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6636651303734!2d-58.57119266826169!3d-34.6381663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f16ca6e635%3A0x115cf6e735662c30!2sAv.%20Pres.%20Per%C3%B3n%20351%2C%20B1707ABD%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657947322718!5m2!1ses-419!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div>
-                        <h4>Horarios</h4>
-                        <table class="container-fluid text-center">
-                            <tr>
-                                <td>Lunes a viernes</td>
-                                <td>Sábado</td>
-                                <td>Domingo</td>
-                            </tr>
-                            <tr>
-                                <td>19:00 Pm a 02:00 Am</td>
-                                <td>19:00 Pm a 06:00 Am</td>
-                                <td>11:00 Am a 17:00 PM</td>
-                            </tr>
-                        </table>
-                    </div>
+                <!--redes sociales-->
+                <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3" id="link">
+                    <h4>Contacto y Redes Sociales</h4>
+                    <p>Teléfono: 11111111</p>
+                    <p>WhatsApp: +54 911 1111111111</p>
+                    <p> E-Mail: ZONA-CERO@gmail.com</p>
+                    <a class="text-white" href="https://www.facebook.com/">Facebook</a>
+                    <a class="text-white" href="https://www.instagram.com/">Instagram</a>
                 </div>
-                <div class="footer-copyright text-center py-3"> Copyright&copy ZONA-CERO; 2022 - Lautaro Ferrari - Todos los
-                    derechos reservados</div>
+                <!--suscribirse-->
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="link">
+                    <h4>Suscribite a nuestro Newsletter y enterate de las ultimas novedades 
+                    </h4>
+                    <form>
+                        <label for="mail" class="small">Ingresa tu correo electrónico</label>
+                        <input type="email" id="mail" required>
+                        <!-- Modal -->
+                        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#myModal">Confirmar</button>
+                        <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title text-body">Disculpe las molestias</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-body">Esta sección se encuentra en desarrollo</div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!--FIN Modal-->
+                    </form>
+                </div>
+                <!--direccion-->
+                <div class="container-fluid">
+                    <h4>Donde nos encontramos</h4>
+                    <p>Nos encontramos en Av. Pres. Perón 351, B1707 Morón, Provincia de Buenos Aires</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6636651303734!2d-58.57119266826169!3d-34.6381663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f16ca6e635%3A0x115cf6e735662c30!2sAv.%20Pres.%20Per%C3%B3n%20351%2C%20B1707ABD%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657947322718!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h4>Horarios</h4>
+                    <table class="container-fluid text-center">
+                        <tr>
+                            <td>Lunes a viernes</td>
+                            <td>Sábado</td>
+                            <td>Domingo</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 Pm a 02:00 Am</td>
+                            <td>19:00 Pm a 06:00 Am</td>
+                            <td>11:00 Am a 17:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-copyright text-center py-3">
+                    <h6>
+                        Copyright&copy ZONA-CERO; 2022 - Lautaro Ferrari - Todos los
+                    derechos reservados
+                    </h6>
+                </div>
             </footer>
     
 

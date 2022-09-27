@@ -1,0 +1,20 @@
+
+**HECHO corregir los espacios de los nav 
+
+reducir la resolución minima a 320px
+
+**HECHO emparejar los espacios de los encabezados principales
+
+reemplazar los tamaños de las fuentes por porcentajes o vh, o en su defecto agregar media querys
+
+reemplazar la pagina "reservar" para poner datos de bartenders y ofrecer trabajo (poner cantantes para un show imaginario, fotos/tarjetas de los bartenders con tragos de su invencion)
+
+agregar datos en el footer (tweeter youtube tik tok), intentar colocar iconos
+
+achicar y centrar el carrousel
+
+reveer los tamaños de las imagenes
+
+ver si es posible colocar en el index el sobre nosotros al lado de reservas (solo para web)
+
+usar un MODAL (bootstrap w3schools) para avisar que no funciona el formulario
