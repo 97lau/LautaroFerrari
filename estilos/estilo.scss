@@ -74,11 +74,11 @@ body {
                 border: $contenedores;
             }
             h3 {
-                font-size: $texto;
+                font-size: $encabezadossec;
             }
             p {
                 padding-top: 1%;
-                font-size:$texto;
+                font-size:$encabezadossec;
             }
         }
         .sobrenosotros {
@@ -119,17 +119,17 @@ body {
                 transition: 0.2s;
                 }
             }
-            p {
-                font-size: $texto;
-            }
             h3 {
                 padding: 1%;
                 border: 3px solid white;
                 display: inline-block;
-                font-size: $texto;
+                font-size: $encabezadossec;
                 a {
-                text-decoration: none;
+                    text-decoration: none;
                 }
+            }
+            p {
+                font-size: $encabezadossec;
             }
             .link:hover {
                 background-color: rgb(0, 0, 0)
@@ -144,7 +144,7 @@ body {
                 letter-spacing: 2px
             }
             h3 {
-                font-size: $subtitulos;
+                font-size: $encabezadossec;
                 text-align: left;
                 border: none;
             }
@@ -286,12 +286,13 @@ body {
                     padding: 5px 5px 5px 0px;
                     }
                 }
-                a {font-size: $encabezadossec;
-                    border: 3px solid white;
+                button {font-size: $texto;
                     margin: 1%;
+                    
+                    border: 3px solid white;
                 }
             }
-            .promo a:hover {
+            .mod :hover {
                 background-color: black;
                 text-decoration: none;
             }

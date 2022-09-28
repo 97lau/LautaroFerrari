@@ -155,10 +155,6 @@ body main .sobrenosotros .imagenesnosotros :hover {
   transition: 0.2s;
 }
 
-body main .sobrenosotros p {
-  font-size: 2vw;
-}
-
 body main .sobrenosotros h3 {
   padding: 1%;
   border: 3px solid white;
@@ -168,6 +164,10 @@ body main .sobrenosotros h3 {
 
 body main .sobrenosotros h3 a {
   text-decoration: none;
+}
+
+body main .sobrenosotros p {
+  font-size: 2vw;
 }
 
 body main .sobrenosotros .link:hover {
@@ -188,7 +188,7 @@ body main .promociones h2 {
 }
 
 body main .promociones h3 {
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: left;
   border: none;
 }
@@ -400,13 +400,13 @@ body main .row .promo ul li {
   padding: 5px 5px 5px 0px;
 }
 
-body main .row .promo a {
+body main .row .promo button {
   font-size: 2vw;
-  border: 3px solid white;
   margin: 1%;
+  border: 3px solid white;
 }
 
-body main .row .promo a:hover {
+body main .row .mod :hover {
   background-color: black;
   text-decoration: none;
 }
