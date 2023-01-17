@@ -151,44 +151,29 @@
             <article class="reservas">
                 <h2>Hacé tu reserva</h2>
                 <h3>Consultá las fechas disponibles</h3>
-                <div class="container">
-                    <div action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5"
-                        autocomplete="off">
-                        <label for="nombre">Nombre</label></br>
-                        <input type="text" name="nombre" id="nombre" class="cajas"></br>
-                        <label for="email">Email</label></br>
-                        <input type="email" name="email" id="email" class="cajas"></br>
-                        <label for="telefono">Teléfono</label></br>
-                        <input type="number" name="telefono" id="telefono" class="cajas"></br>
-                        <label for="fecha-hora">Fecha y hora</label></br>
-                        <input type="datetime-local" id="fecha" name="fecha-hora" class="cajas"></br>
-                        <label for="cantidad"><input type="number" min="1" max="16" required id="npersonas">Cantidad de personas</label></br>
-                        <!-- Modal -->
-                        <button type="button" class="btn btn-light btn-sm text-white" data-toggle="modal"
-                            data-target="#myModal">Confirmar</button>
-                        <div class="modal fade" id="myModal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title text-body">
-                                            Disculpe las molestias
-                                        </h4>
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            &times;
-                                        </button>
-                                    </div>
-                                    <div class="modal-body text-body">
-                                        Esta sección se encuentra en desarrollo
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn text-white" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--FIN Modal-->
-                    </div>
-                </div>
+                <form class="container" id="formReserva">
+                    <label for="nombre">Nombre</label></br>
+                    <input id="userName" type="text" name="nombre" class="cajas">
+                </br>
+                    <label for="email">Email</label></br>
+                    <input id="email" type="email" name="email" class="cajas">
+                </br>
+                    <label for="telefono">Teléfono</label></br>
+                    <input id="numTel" type="number" name="telefono" class="cajas">
+                </br>
+                    <label for="fecha">Fecha</label></br>
+                    <input id="fechaRes" type="date" name="fecha" class="cajas">
+                </br>
+                    <label for="horario">Horario</label></br>
+                    <input id="horaRes" type="time" name="horario" class="cajas">
+                </br>
+                    <button type="submit" class="btn btn-light btn-sm text-white">Confirmar</button>
+                </form>
+                <!--VENTANA DE CONFIRMACIÓN-->
+                <br>
+                <div id="confirmada"></div>
+                <br>
+                <!--VENTANA DE CONFIRMACIÓN-->
             </article>
             <!--Fin Reservas-->
         </main>
@@ -282,6 +267,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
             integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
             crossorigin="anonymous"></script>
+        <!-- script reservas -->
+        <script src="/javascript/reservas.js"></script>
+        <!-- script reservas -->
 </body>
 
 </html>

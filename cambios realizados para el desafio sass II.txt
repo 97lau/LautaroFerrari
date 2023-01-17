@@ -1,9 +1,0 @@
-1) Se mejoró el seo: modifiqué las keywords para diferenciarlas entre paginas, al igual que las descripciones que antes eran las mismas para todas las paginas; corregí errores al momento de colocar los encabezados y errores de ortografía y redacción; el tamaño de las imagenes lo reduje para entregas anteriores.
-
-2) Utilicé @mixin y el @include para diseñar el cuerpo de los contenedores (bordes, color de fondo y de texto)
-
-3) Utilicé lo mapas para incrementar el grosor del texto de los H1 en todas las paginas.
-
-(el mapa junto con el mixin están declarados en las primeras lineas de código)
-
-4) Utilicé @extend para dar formato a las imagenes de la sección ".sobrenosotros", y a su vez a la sección ".promociones" de la página Index .
