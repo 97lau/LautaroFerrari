@@ -48,18 +48,44 @@ e.preventDefault();
 const newUser = new reserva(nombre.value, mail.value, tel.value, fecha.value, horario.value);
 guardaUser(newUser);
 cargaSt(reservas);
-Swal.fire(
+fetch('https://jsonplaceholder.typicode.com/todos/1', {
+    method: "post",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newUser)
+})
+.then(res => res.json())
+.then(response => {
+    Swal.fire(
     'Felicitaciones!',
     'Tu reserva fue confirmada exitosamente',
     'success'
-)
+);
+    let table = document.querySelector("#tabla");
+    let fila = document.createElement("tr");
+    let celdaNombre = document.createElement("td");
+    let celdaMail = document.createElement("td");
+    let celdaTel = document.createElement("td");
+    let celdaFecha = document.createElement("td");
+    let celdaHorario = document.createElement("td");
+
+    celdaNombre.textContent = nombre.value;
+    celdaMail.textContent = mail.value;
+    celdaTel.textContent = tel.value;
+    celdaFecha.textContent = fecha.value;
+    celdaHorario.textContent = horario.value;
+
+    fila.appendChild(celdaNombre);
+    fila.appendChild(celdaMail);
+    fila.appendChild(celdaTel);
+    fila.appendChild(celdaFecha);
+    fila.appendChild(celdaHorario);
+
+table.appendChild(fila);;
+})
+.catch(error => {
+    console.error("Error:", error);
+})
 })
 //FIN evento//
-
-
-ver si necesito crear un carrito para usar el fetch
-/* 
-
-fetch(`./data/data.json`)
-.then((response) => response.json())
-.then((data) => {guardaUser(data)})  */
