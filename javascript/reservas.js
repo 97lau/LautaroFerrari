@@ -45,10 +45,16 @@ function cargaSt(arr) {
 //evento//
 formReserva.addEventListener(`submit`,(e)=>{
 e.preventDefault();
+if (nombre.value.length > 30 || /[^a-zA-Z\s]/.test(nombre.value)) {
+    Toastify({
+        text: "El nombre solo puede contener hasta 30 caracteres y solo puede incluir letras y espacios",
+        duration: 3000
+        }).showToast();
+    return;}
 const newUser = new reserva(nombre.value, mail.value, tel.value, fecha.value, horario.value);
 guardaUser(newUser);
 cargaSt(reservas);
-fetch('https://jsonplaceholder.typicode.com/todos/1', {
+fetch('https://jsonplaceholder.typicode.com/posts/', {
     method: "post",
     headers: {
         "Content-Type": "application/json"
@@ -62,30 +68,66 @@ fetch('https://jsonplaceholder.typicode.com/todos/1', {
     'Tu reserva fue confirmada exitosamente',
     'success'
 );
+    document.getElementById("confirmaRes").innerHTML = "Tu reserva se confirmó correctamente con los siguientes datos";
     let table = document.querySelector("#tabla");
-    let fila = document.createElement("tr");
-    let celdaNombre = document.createElement("td");
-    let celdaMail = document.createElement("td");
-    let celdaTel = document.createElement("td");
-    let celdaFecha = document.createElement("td");
-    let celdaHorario = document.createElement("td");
 
-    celdaNombre.textContent = nombre.value;
-    celdaMail.textContent = mail.value;
-    celdaTel.textContent = tel.value;
-    celdaFecha.textContent = fecha.value;
-    celdaHorario.textContent = horario.value;
+let filaEncabezados = document.createElement("tr");
 
-    fila.appendChild(celdaNombre);
-    fila.appendChild(celdaMail);
-    fila.appendChild(celdaTel);
-    fila.appendChild(celdaFecha);
-    fila.appendChild(celdaHorario);
+let celdaNombreEncabezado = document.createElement("th");
+celdaNombreEncabezado.textContent = "Nombre";
 
-table.appendChild(fila);;
+let celdaMailEncabezado = document.createElement("th");
+celdaMailEncabezado.textContent = "Email";
+
+let celdaTelEncabezado = document.createElement("th");
+celdaTelEncabezado.textContent = "Teléfono";
+
+let celdaFechaEncabezado = document.createElement("th");
+celdaFechaEncabezado.textContent = "Fecha";
+
+let celdaHorarioEncabezado = document.createElement("th");
+celdaHorarioEncabezado.textContent = "Horario";
+
+filaEncabezados.appendChild(celdaNombreEncabezado);
+filaEncabezados.appendChild(celdaMailEncabezado);
+filaEncabezados.appendChild(celdaTelEncabezado);
+filaEncabezados.appendChild(celdaFechaEncabezado);
+filaEncabezados.appendChild(celdaHorarioEncabezado);
+
+table.appendChild(filaEncabezados);
+
+let fila = document.createElement("tr");
+
+let celdaNombre = document.createElement("td");
+celdaNombre.textContent = nombre.value;
+
+let celdaMail = document.createElement("td");
+celdaMail.textContent = mail.value;
+
+let celdaTel = document.createElement("td");
+celdaTel.textContent = tel.value;
+
+let celdaFecha = document.createElement("td");
+celdaFecha.textContent = fecha.value;
+
+let celdaHorario = document.createElement("td");
+celdaHorario.textContent = horario.value;
+
+fila.appendChild(celdaNombre);
+fila.appendChild(celdaMail);
+fila.appendChild(celdaTel);
+fila.appendChild(celdaFecha);
+fila.appendChild(celdaHorario);
+
+table.appendChild(fila);
 })
 .catch(error => {
-    console.error("Error:", error);
+    Swal.fire({
+        icon: 'error',
+        title: 'Error al confirmar tu reserva',
+        text: 'Por favor intenta nuevamente mas tarde',
+        footer: 'También puedes contactarnos por nuestras redes sociales al final de la página'
+    });
 })
 })
 //FIN evento//

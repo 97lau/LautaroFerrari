@@ -215,6 +215,28 @@ body {
             }
         }
     }
+    /* reserva confirmada*/
+    #tabla {
+        margin: 0 auto;
+        border: 3px solid white;
+        border-collapse: collapse;
+        background-color: rgb(114, 114, 114);
+        color: white;
+        border-collapse: separate;
+        border-spacing: 10px;
+        align-content: center;
+        th{
+            padding: 10px;
+            border: 1px solid white;
+            border-bottom: 3px solid white
+        }
+        td{
+            padding: 10px;
+            border: 1px solid white;
+            border-bottom: 3px solid white
+        }
+    }
+    /*fin reserva confirmada */
 /*fin INDEX*/
 /*MENU*/
     main {
